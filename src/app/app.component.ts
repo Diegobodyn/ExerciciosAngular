@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  nomes: string[] = ['joão', 'maria','josé','pedro','felipe','carlos']
+  nomes: string[] = ['joão', 'maria','josé','pedro','felipe','carlos'];
+
+  buscar(valor: string){
+    alert(valor) 
+  }
 
 }
