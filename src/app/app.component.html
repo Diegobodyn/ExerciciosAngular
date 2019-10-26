@@ -1,8 +1,10 @@
 <ul *ngFor="let nome of nomes, let i= index">
-  <li>nome da pessoa é: {{nome}}, está na posição{{i+1}}</li>
+  <li>{{nomeFiltro}}</li>
 </ul>
+
+<!--
 <p *ngIf="nomes.length ==0">Nenhum nome encontrado, usando *ngIf</p>
 
-<p  [hidden]="nomes.length > 0">Nenhum nome encontrado, usando hidden </p> 
+<p  [hidden]="nomes.length > 0">Nenhum nome encontrado, usando hidden </p>-->
 
-<input #box placeholder= "Digite um nome a procurar" (keyup)="buscar(box.value)"/>
+<input #box placeholder= "Digite um nome a procurar" (keyup)="buscar(box.value)"/>  
